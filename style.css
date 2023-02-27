@@ -50,7 +50,10 @@ main .main-logo{
     margin-bottom: 35px;
 }
 main .main-logo img{
-    width: 300px;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
     
 }
 main .main-input{
@@ -109,5 +112,40 @@ main .main-buttons button{
     color: #5f6368;
     border-radius: 5px;
     padding: 0 15px;
+    margin-right: 15px;
 }
 
+main .main-buttons button:hover{
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px black;
+    color: #222;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    border-top: 1px solid  #e4e4e4;
+}
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 15px;
+    fo
+}
+footer .footer-left{
+    justify-self:  left;
+}
+footer .footer-right{
+    justify-self: right;
+}
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+}
